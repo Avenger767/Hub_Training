@@ -1,5 +1,15 @@
 
+
 function startTraining() {
+    const usernameInput = document.getElementById('username');
+    if (usernameInput && usernameInput.value.trim()) {
+        localStorage.setItem('simTechUser', usernameInput.value.trim());
+        window.location.href = 'page2.html';
+    } else {
+        alert('Please enter your name.');
+    }
+}
+
     const username = document.getElementById('username').value;
     if (username.trim()) {
         localStorage.setItem('simTechUser', username);
