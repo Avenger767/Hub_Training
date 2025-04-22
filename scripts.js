@@ -65,7 +65,7 @@ function submitInterfaceQuiz() {
     localStorage.setItem("interfaceScore", correct);
     const formData = new FormData(form);
     localStorage.setItem("interfaceAnswers", JSON.stringify(Object.fromEntries(formData)));
-    setTimeout(() => window.location.href = "page4.html", 1000);
+    window.location.href = 'page4.html';
 }
 
 function submitMotionQuiz() {
