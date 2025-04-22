@@ -1,0 +1,81 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #005aa7, #0078d7);
+    margin: 0;
+    color: white;
+    animation: fadeInBody 1s ease-in-out;
+}
+
+@keyframes fadeInBody {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.container {
+    background: white;
+    color: #333;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    max-width: 800px;
+    width: 90%;
+    animation: popUp 0.8s ease-out;
+}
+
+@keyframes popUp {
+    0% {transform: scale(0.9); opacity: 0;}
+    100% {transform: scale(1); opacity: 1;}
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+input[type="text"], button {
+    padding: 12px;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+input[type="text"] {
+    width: 60%;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #0078d7;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #005aa7;
+}
+
+form {
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin: 8px 0;
+}
+
+img.logo {
+    width: 150px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.scrollable {
+    max-height: 90vh;
+    overflow-y: auto;
+}

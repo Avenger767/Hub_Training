@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Motion Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div class="container scrollable">
+        <img src="afg_logo.png" class="logo" alt="AFG Logo">
+        <h2>Motion Quiz</h2>
+        <form id="motionQuizForm">
+            <label>What happens if you remove the EtherCAT secros cable at a drive?</label><br>
+            <input type="radio" name="mq1" value="0"> The GUI freezes<br>
+            <input type="radio" name="mq1" value="0"> Nothing changes<br>
+            <input type="radio" name="mq1" value="1"> A communication fault occurs<br>
+            <input type="radio" name="mq1" value="0"> The system powers off<br><br>
+
+            <label>What software application is used to interface with motion system and view error codes?</label><br>
+            <input type="radio" name="mq2" value="0"> Launchpad<br>
+            <input type="radio" name="mq2" value="0"> jDFC<br>
+            <input type="radio" name="mq2" value="0"> MCLogic<br>
+            <input type="radio" name="mq2" value="1"> CTS+<br><br>
+
+            <label>What needs to be closed in order for motion to engage? (Select all that apply)</label><br>
+            <input type="checkbox" name="mq3" value="1"> Sim door closed<br>
+            <input type="checkbox" name="mq3" value="1"> Gate closed<br>
+            <input type="checkbox" name="mq3" value="1"> Control loading On<br>
+            <input type="checkbox" name="mq3" value="0"> Projectors On<br>
+            <input type="checkbox" name="mq3" value="0"> EMM Cabinet in maintenance mode<br><br>
+
+            <label>Class 2 Faults remove high power from the CSA drives.</label><br>
+            <input type="radio" name="mq4" value="1"> True<br>
+            <input type="radio" name="mq4" value="0"> False<br><br>
+
+            <label>Which access level is required to delete log files in the MOOG Gui?</label><br>
+            <input type="radio" name="mq5" value="0"> Operator<br>
+            <input type="radio" name="mq5" value="0"> Technician<br>
+            <input type="radio" name="mq5" value="1"> Engineer<br>
+            <input type="radio" name="mq5" value="0"> Administrator<br><br>
+
+            <label>What is the purpose of the “Ownership” function in the Moog GUI?</label><br>
+            <input type="radio" name="mq6" value="0"> Disable GUI for maintenance<br>
+            <input type="radio" name="mq6" value="1"> Allow write access for 1 user<br>
+            <input type="radio" name="mq6" value="0"> Change user passwords<br>
+            <input type="radio" name="mq6" value="0"> Reset log files<br><br>
+
+            <label>What does the Gas Spring Actuator assist with?</label><br>
+            <input type="radio" name="mq7" value="0"> Overcurrent detection<br>
+            <input type="radio" name="mq7" value="1"> Reduces mechanical load on linear actuator<br>
+            <input type="radio" name="mq7" value="0"> Controls RTH fallback<br>
+            <input type="radio" name="mq7" value="0"> Monitors position feedback<br><br>
+
+            <label>Drawbridge motor power switches to battery during power failure.</label><br>
+            <input type="radio" name="mq8" value="1"> True<br>
+            <input type="radio" name="mq8" value="0"> False<br><br>
+
+            <label>The manual drawbridge control panel has which buttons?</label><br>
+            <input type="radio" name="mq9" value="0"> START, RUN, STOP<br>
+            <input type="radio" name="mq9" value="1"> UP, STOP, DOWN<br>
+            <input type="radio" name="mq9" value="0"> LOAD, MOVE, RESET<br>
+            <input type="radio" name="mq9" value="0"> GO, HOLD, EXIT<br><br>
+
+            <label>How often should actuator motor oil be replaced?</label><br>
+            <input type="radio" name="mq10" value="0"> Every 6 months<br>
+            <input type="radio" name="mq10" value="0"> 1000 operating hours<br>
+            <input type="radio" name="mq10" value="1"> Once a year or 5480 hours<br>
+            <input type="radio" name="mq10" value="0"> Monthly<br><br>
+
+            <label>What is the minimum separation between encoder and motor power cables?</label><br>
+            <input type="radio" name="mq11" value="0"> 6 inches<br>
+            <input type="radio" name="mq11" value="1"> 18 inches (0.5m)<br>
+            <input type="radio" name="mq11" value="0"> 24 inches<br>
+            <input type="radio" name="mq11" value="0"> No specific requirement<br><br>
+
+            <label>Which tool is used to inspect the cooling fans in the cabinet?</label><br>
+            <input type="radio" name="mq12" value="0"> Air pressure tester<br>
+            <input type="radio" name="mq12" value="1"> Visual inspection and Moog GUI<br>
+            <input type="radio" name="mq12" value="0"> Fan speed analyzer<br>
+            <input type="radio" name="mq12" value="0"> Maintenance jumper<br><br>
+
+            <label>9 filters are located in the Motion Cabinet doors and front panel.</label><br>
+            <input type="radio" name="mq13" value="1"> True<br>
+            <input type="radio" name="mq13" value="0"> False<br><br>
+
+            <label>During a Class 2 fault, what powers the motion actuators?</label><br>
+            <input type="radio" name="mq14" value="0"> Facility Power<br>
+            <input type="radio" name="mq14" value="1"> 48VDC Battery Backup<br>
+            <input type="radio" name="mq14" value="0"> 24VDC UPS<br>
+            <input type="radio" name="mq14" value="0"> PLC Output Relay<br><br>
+
+            <label>What fault appears if the 24V UPS (2G1) supply is lost?</label><br>
+            <input type="radio" name="mq15" value="0"> Class 2 fault<br>
+            <input type="radio" name="mq15" value="1"> Class 1 fault<br>
+            <input type="radio" name="mq15" value="0"> Warning only<br>
+            <input type="radio" name="mq15" value="0"> Emergency mode trigger<br><br>
+
+            <label>If the RTH timeout occurs without reaching home, what fault is generated?</label><br>
+            <input type="radio" name="mq16" value="0"> Fault 105<br>
+            <input type="radio" name="mq16" value="1"> Class 2 system fault<br>
+            <input type="radio" name="mq16" value="0"> Interlock inhibit<br>
+            <input type="radio" name="mq16" value="0"> Configuration error<br><br>
+
+            <button type="button" onclick="submitMotionQuiz()">Next</button>
+        </form>
+    </div>
+</body>
+</html>
