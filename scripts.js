@@ -12,7 +12,42 @@ function startTraining() {
 function submitInterfaceQuiz() {
     let form = document.getElementById('interfaceQuizForm');
     let correct = 0;
+    
     const answers = {
+        interface: {
+            q1: "Interface cockpit hardware with simulation software",
+            q2: "True",
+            q3: "Biometric Feed",
+            q4: "False",
+            q5: "To expand the input/output and communication capabilities of a MPIC card depending on the aircraft system requirements.",
+            q6: "Yes, they can be hot-swapped.",
+            q7: "OneUI",
+            q8: "Sim Readiness and Interface Manager",
+            q9: "False",
+            q10: "28V DC",
+            q11: "Interface Manager",
+            q12: ["Part number", "Serial number", "Cable number", "Daughterboard", "Schematics"]
+        },
+        motion: {
+            mq1: "A communication fault occurs",
+            mq2: "MCLogic",
+            mq3: ["Sim door closed", "Gate closed", "Control loading On"],
+            mq4: "True",
+            mq5: "Engineer",
+            mq6: "Allow write access for 1 user",
+            mq7: "Reduces mechanical load on linear actuator",
+            mq8: "True",
+            mq9: "START, RUN, STOP",
+            mq10: "Once a year or 5480 hours",
+            mq11: "18 inches (0.5m)",
+            mq12: "Visual inspection and Moog GUI",
+            mq13: "True",
+            mq14: "48VDC Battery Backup",
+            mq15: "Class 1 fault",
+            mq16: "Class 2 system fault"
+        }
+    };
+
         q1: "1", q2: "0", q3: "1", q4: "1", q5: "1", q6: "1", q7: "1",
         q8: "1", q9: "1", q10: "1", q11: "1"
     };
@@ -36,7 +71,42 @@ function submitInterfaceQuiz() {
 function submitMotionQuiz() {
     let form = document.getElementById('motionQuizForm');
     let correct = 0;
+    
     const answers = {
+        interface: {
+            q1: "Interface cockpit hardware with simulation software",
+            q2: "True",
+            q3: "Biometric Feed",
+            q4: "False",
+            q5: "To expand the input/output and communication capabilities of a MPIC card depending on the aircraft system requirements.",
+            q6: "Yes, they can be hot-swapped.",
+            q7: "OneUI",
+            q8: "Sim Readiness and Interface Manager",
+            q9: "False",
+            q10: "28V DC",
+            q11: "Interface Manager",
+            q12: ["Part number", "Serial number", "Cable number", "Daughterboard", "Schematics"]
+        },
+        motion: {
+            mq1: "A communication fault occurs",
+            mq2: "MCLogic",
+            mq3: ["Sim door closed", "Gate closed", "Control loading On"],
+            mq4: "True",
+            mq5: "Engineer",
+            mq6: "Allow write access for 1 user",
+            mq7: "Reduces mechanical load on linear actuator",
+            mq8: "True",
+            mq9: "START, RUN, STOP",
+            mq10: "Once a year or 5480 hours",
+            mq11: "18 inches (0.5m)",
+            mq12: "Visual inspection and Moog GUI",
+            mq13: "True",
+            mq14: "48VDC Battery Backup",
+            mq15: "Class 1 fault",
+            mq16: "Class 2 system fault"
+        }
+    };
+
         mq1: "1", mq2: "1", mq4: "1", mq5: "1", mq6: "1", mq7: "1",
         mq8: "1", mq9: "0", mq10: "1", mq11: "1", mq12: "1",
         mq13: "1", mq14: "1", mq15: "1", mq16: "1"
@@ -59,7 +129,42 @@ function submitMotionQuiz() {
 }
 
 function reviewAnswers(quizType) {
+    
     const answers = {
+        interface: {
+            q1: "Interface cockpit hardware with simulation software",
+            q2: "True",
+            q3: "Biometric Feed",
+            q4: "False",
+            q5: "To expand the input/output and communication capabilities of a MPIC card depending on the aircraft system requirements.",
+            q6: "Yes, they can be hot-swapped.",
+            q7: "OneUI",
+            q8: "Sim Readiness and Interface Manager",
+            q9: "False",
+            q10: "28V DC",
+            q11: "Interface Manager",
+            q12: ["Part number", "Serial number", "Cable number", "Daughterboard", "Schematics"]
+        },
+        motion: {
+            mq1: "A communication fault occurs",
+            mq2: "MCLogic",
+            mq3: ["Sim door closed", "Gate closed", "Control loading On"],
+            mq4: "True",
+            mq5: "Engineer",
+            mq6: "Allow write access for 1 user",
+            mq7: "Reduces mechanical load on linear actuator",
+            mq8: "True",
+            mq9: "START, RUN, STOP",
+            mq10: "Once a year or 5480 hours",
+            mq11: "18 inches (0.5m)",
+            mq12: "Visual inspection and Moog GUI",
+            mq13: "True",
+            mq14: "48VDC Battery Backup",
+            mq15: "Class 1 fault",
+            mq16: "Class 2 system fault"
+        }
+    };
+
         interface: {
             q1: "1", q2: "0", q3: "1", q4: "1", q5: "1", q6: "1", q7: "1",
             q8: "1", q9: "1", q10: "1", q11: "1", q12: ["Part number", "Serial number", "Cable number", "Daughterboard", "Schematics"]
